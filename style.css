@@ -156,6 +156,7 @@ li span {
   .countdown {
     position: relative;
     top: 10px;
+    
   }
 
   .form {
@@ -177,6 +178,4 @@ li span {
   li span {
     font-size: 40px;
   }
-}
-
 }
