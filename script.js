@@ -2,7 +2,11 @@ const countdownForm = document.getElementById('countdownForm');
 const inputContainer = document.getElementById('input-container');
 const dateEl = document.getElementById('date-picker');
 
-
+let countdownTitle = '';
+let countdownDate = '';
+let countdownValue = Date;
+let countdownActive;
+let savedCountdown;
 
 
 // Set Date Input Min & Value with Today's Date
