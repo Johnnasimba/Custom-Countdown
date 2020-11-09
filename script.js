@@ -19,6 +19,13 @@ let savedCountdown;
 const today = new Date().toISOString().split('T')[0];
 dateEl.setAttribute('min', today);
 
+// Populate Countdown / Complete UI
+function updateDOM() {
+    const now = new Date().getTime();
+    const distance = countdownValue - now;
+    console.log('distance', distance); 
+}
+
 
 // Take values from Form Input
 function updateCountdown(e) {
@@ -29,7 +36,8 @@ function updateCountdown(e) {
     console.log(countdownTitle, countdownDate)
     // Get number version of current Date, updateDome
     countdownValue = new Date(countdownDate).getTime();
-    console.log('countdown value', countdownValue)
+    console.log('countdown value', countdownValue);
+    updateDOM();
 
 }
 
