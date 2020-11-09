@@ -21,6 +21,10 @@ function updateCountdown(e) {
     countdownDate = e.srcElement[1].value
 
     console.log(countdownTitle, countdownDate)
+    // Get number version of current Date, updateDome
+    countdownValue = new Date(countdownDate).getTime();
+    console.log('countdown value', countdownValue)
+
 }
 
 // Event Listener
