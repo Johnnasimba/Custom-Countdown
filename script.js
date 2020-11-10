@@ -32,7 +32,9 @@ function updateDOM() {
     const hours = Math.floor((distance % day) / hour);
     const minutes = Math.floor((distance % hour) / minute);
     const seconds = Math.floor((distance % minute) / second);
-    console.log(days, hours,  minutes, seconds)
+    console.log(days, hours, minutes, seconds)
+    // Hide Input
+    inputContainer.hidden = true;
 }
 
 
