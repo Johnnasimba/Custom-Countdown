@@ -35,6 +35,8 @@ function updateDOM() {
     console.log(days, hours, minutes, seconds)
     // Hide Input
     inputContainer.hidden = true;
+    // Show Countdown
+    countdownEl.hidden = false;
 }
 
 
