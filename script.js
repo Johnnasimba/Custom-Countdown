@@ -70,6 +70,9 @@ function reset() {
 
     // Stop the countdown
     clearInterval(countdownActive);
+    // Reset values
+    countdownTitle = '';
+    countdownDate = '';
    
 }
 
