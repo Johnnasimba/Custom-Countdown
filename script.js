@@ -65,8 +65,8 @@ function updateCountdown(e) {
 // Reset All Values
 function reset() {
     // Hide Countdown, show Input
-    countdownEl.hidden = true;
-    inputContainer.hidden = false;
+countdownEl.hidden = true;
+inputContainer.hidden = false;
    
 }
 
