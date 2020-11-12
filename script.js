@@ -62,7 +62,11 @@ function updateCountdown(e) {
     e.preventDefault();
     countdownTitle = e.srcElement[0].value;
     countdownDate = e.srcElement[1].value
-
+    savedCountdown = {
+        title: countdownTitle,
+        date: countdownDate 
+    }
+    localStorage.setItem('countdown', savedCountdown)
     //  Check for valid date
     if (countdownDate === '') {
         alert('Please select a date for the countdown.')
