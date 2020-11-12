@@ -66,7 +66,7 @@ function updateCountdown(e) {
         title: countdownTitle,
         date: countdownDate 
     }
-    localStorage.setItem('countdown', savedCountdown)
+    localStorage.setItem('countdown', JSON.stringify(savedCountdown))
     //  Check for valid date
     if (countdownDate === '') {
         alert('Please select a date for the countdown.')
