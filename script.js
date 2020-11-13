@@ -95,9 +95,10 @@ function restorePreviousCountdown() {
     if (localStorage.getItem('countdown')) {
         inputContainer.hidden = true;
         savedCountdown = JSON.parse(localStorage.getItem('countdown'));
-        countdownElTitle = savedCountdown.title;
+        console.log(savedCountdown);
+        countdownTitle = savedCountdown.title;
         countdownDate = savedCountdown.date; 
-        countdownValue = new Date(countdownDate).getItem();
+        countdownValue = new Date(countdownDate).getTime();
         updateDOM()
     }
 }
